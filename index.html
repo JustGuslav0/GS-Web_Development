@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição FutureSkills</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="formulario">
+        
+        <h1>Inscrição para o Programa SkillShift</h1>
+        <p>Preencha o formulário para se inscrever e obter acesso antecipado à plataforma de requalificação profissional.</p>
+
+        <div id="conteudo">
+
+            <div>
+                <h3>Nome Completo</h3>
+                <input type="text" id="nome" placeholder="Seu nome completo">
+
+                <h3>CPF</h3>
+                <input type="text" id="cpf" placeholder="Somente números ou 123.456.789-10">
+
+                <h3>E-mail</h3>
+                <input type="text" id="email" placeholder="seu@email.com">
+
+                <h3>Habilidades (Escolha e adicione)</h3>
+                <label>
+                    <input type="radio" name="habilidade" value="Análise de Dados (SQL/BI)">
+                    Análise de Dados (Hard Skill)
+                </label>
+                <label>
+                    <input type="radio" name="habilidade" value="Automação de Processos (RPA)">
+                    Automação de Processos (Hard Skill)
+                </label>
+                <label>
+                    <input type="radio" name="habilidade" value="Gestão de Projetos">
+                    Gestão de Projetos (Hard Skill)
+                </label>
+                <label>
+                    <input type="radio" name="habilidade" value="Criatividade e Inovação">
+                    Criatividade e Inovação (Soft Skill)
+                </label>
+                <label>
+                    <input type="radio" name="habilidade" value="Trabalho em Equipe">
+                    Trabalho em Equipe (Soft Skill)
+                </label>
+                <label>
+                    <input type="radio" name="habilidade" value="Comunicação e Storytelling">
+                    Comunicação e Storytelling (Soft Skill)
+                </label>
+                <label>
+                    <input type="radio" name="habilidade" value="Gestão de Tempo">
+                    Gestão de Tempo (Soft Skill)
+                </label>
+                
+                <button type="button" id="aplicar">Adicionar Habilidade</button>
+
+                <h3>Habilidades Adicionadas:</h3>
+                <div id="lista_habilidades"></div>
+
+                <h3>Tipo de Interesse</h3>
+                <label>
+                    <input type="radio" name="tipo_interesse" value="Trabalho Remoto">
+                    Trabalho Remoto
+                </label>
+                <label>
+                    <input type="radio" name="tipo_interesse" value="IA">
+                    Inteligência Artificial
+                </label>
+                <label>
+                    <input type="radio" name="tipo_interesse" value="Sustentabilidade">
+                    Sustentabilidade
+                </label>
+                <label>
+                    <input type="radio" name="tipo_interesse" value="Upskilling">
+                    Desenvolvimento de Habilidades
+                </label>
+
+                <button type="button" id="sub" onclick="validarFormulario()">Enviar Inscrição</button>
+            </div>
+
+            <div>
+                <div id="validacao">
+                    <h1>Validação:</h1>
+                    <div id="area_feedback"></div>
+                </div>
+
+                <div id="resumo">
+                    <h1>Resumo:</h1>
+                    <div id="area_resumo"></div>
+                </div>
+            </div>
+
+        </div> 
+    </div> 
+
+    <script src="main.js"></script>
+</body>
+</html>
