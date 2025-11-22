@@ -10,7 +10,7 @@
 
 ## 📌 Sobre o Projeto
 
-Formulário interativo de inscrição para o programa **FutureSkills**, desenvolvido para a Global Solution 2025 com tema "O Futuro do Trabalho".
+Formulário interativo de inscrição para o programa **SkillShift**, desenvolvido para a Global Solution 2025 com tema "O Futuro do Trabalho".
 
 O formulário permite que usuários se cadastrem informando nome, CPF, e-mail, habilidades e área de interesse profissional.
 
